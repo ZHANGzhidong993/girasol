@@ -1,0 +1,3 @@
+rootProject.name = 'girasol'
+include 'registry-center'
+
