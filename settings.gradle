@@ -1,3 +1,4 @@
 rootProject.name = 'girasol'
 include 'registry-center'
+include 'microservice-provider-user'
 
