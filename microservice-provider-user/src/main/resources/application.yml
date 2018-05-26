@@ -1,5 +1,5 @@
 server:
-  port: 8762
+  port: 8800
 spring:
   application:
     name: mciroservice-provider-user
@@ -21,6 +21,18 @@ logging:
 eureka:
   client:
     serviceurl:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://pee1:8761/eureka/
     instance:
       prefer-ip-address: true
+
+info:
+  app:
+    name: com.myhexin.girasol
+security:
+  user:
+    name: admin
+    password: 123456
+management:
+  security:
+    enabled: true
+    role: ADMIN

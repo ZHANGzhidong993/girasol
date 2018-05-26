@@ -1,4 +1,4 @@
-package com.myhexin.girasol.registry.center;
+package com.myhexin.girasol.registry.center.ha;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
