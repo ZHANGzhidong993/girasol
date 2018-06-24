@@ -1,0 +1,11 @@
+server:
+  port: 8806
+spring:
+  application:
+    name: microservice-gateway-zuul-filter
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8761/eureka/
+    instance:
+      prefer-ip-address: true

@@ -2,7 +2,7 @@ server:
   port: 8800
 spring:
   application:
-    name: mciroservice-provider-user
+    name: microservice-provider-user
   jpa:
     generate-ddl: false
     show-sql: true
@@ -21,18 +21,9 @@ logging:
 eureka:
   client:
     serviceurl:
-      defaultZone: http://pee1:8761/eureka/
-    instance:
-      prefer-ip-address: true
+      defaultZone: http://127.0.0.1:8761/eureka/
+  instance:
+    prefer-ip-address: true
+    metadata-map:
+      my-metadata: 我定义的元数据
 
-info:
-  app:
-    name: com.myhexin.girasol
-security:
-  user:
-    name: admin
-    password: 123456
-management:
-  security:
-    enabled: true
-    role: ADMIN

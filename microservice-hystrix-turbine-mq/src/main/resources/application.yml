@@ -1,0 +1,27 @@
+server:
+  port: 8811
+
+spring:
+  application:
+    name: microservice-hystrix-turbine-stream
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8761/eureka/
+    instance:
+      prefer-ip-address: true
+
+
+
+
+
+
+
+
+

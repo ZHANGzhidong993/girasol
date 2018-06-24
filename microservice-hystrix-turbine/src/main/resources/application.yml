@@ -1,0 +1,24 @@
+server:
+  port: 8810
+
+spring:
+  application:
+    name: microservice-hystrix-turbine
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8761/eureka/
+    instance:
+      prefer-ip-address: true
+
+turbine:
+  appConfig: microservice-customer-movie-ribbon, microservice-customer-movie
+  clusterNameExpression: "'default'"
+
+
+
+
+
+
+
